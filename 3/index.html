@@ -17,15 +17,25 @@
             caixa.style.left ="300px"
         }
         function corre() {
+            var corre = document.getElementById("corre")
+            caixa.style.left = mat
 
         }
+        function moveButton(x) {
+        marginX = Math.floor(Math.random()*600)
+        marginY = Math.floor(Math.random()*600)
+
+        x.style.margin = marginY.toString() + 'px ' + marginX.toString() + 'px'
+    }
     </script>
 </head>
 <body>
     <div id="caixa" onclick="mudacor()">Caixa</div>    
     <br>
-    <div id="corre" onmouseover="corre()">Caixa 2</div>
+    <div id="corre" onmouseover="moveButton(this)">Caixa 2</div>
     <br>
+
+
     
 </body>
 </html>
