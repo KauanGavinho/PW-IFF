@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Js sinistro</title>
+    <style type="text/css">
+    div{
+        height:100px;
+        width: 100px;
+        background-color: orange;
+        position: relative;
+    }
+    </style>
+    <script type="text/javascript">
+        function mudacor() {
+            var caixa = document.getElementById("caixa")
+            caixa.style = "background-color: blue;"
+            caixa.style.left ="300px"
+        }
+        function corre() {
+
+        }
+    </script>
+</head>
+<body>
+    <div id="caixa" onclick="mudacor()">Caixa</div>    
+    <br>
+    <div id="corre" onmouseover="corre()">Caixa 2</div>
+    <br>
+    
+</body>
+</html>
